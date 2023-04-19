@@ -1,0 +1,32 @@
+
+  .mainfooter {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: #085372;
+  }
+  /* .footersection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  } */
+  .list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    color: #f7bf48;
+    align-items: center;
+  }
+ .pages {
+    text-decoration: none;
+    color: #f7bf48;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .list{
+        flex-direction: column;
+    }
+    .pages li{
+        margin-bottom:10px;
+    }
+    
+  }
