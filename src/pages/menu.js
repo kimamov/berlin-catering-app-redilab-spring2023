@@ -6,7 +6,6 @@ export default function Menu() {
     <>
       <Head>
         <title>Menu Page</title>
-        <description>our fancy menu page</description>
       </Head>
       <main >
         <h1>
