@@ -1,3 +1,4 @@
+import HeroSection from '@/components/heroSection'
 import Head from 'next/head'
 
 
@@ -14,6 +15,7 @@ export default function Home() {
         <h1>
           Main / Index Page
         </h1>
+        <HeroSection />
       </main>
     </>
   )
