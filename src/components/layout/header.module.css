@@ -1,0 +1,46 @@
+.navigation {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #085372;
+}
+
+.logoLink {
+    padding-left: 15px;
+}
+
+.navLinksList {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.navLinkItem {
+    padding: 10px 15px;
+    font-weight: 700;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.navLink {
+    color: #f6c25c;
+}
+
+.navLinkItem:hover {
+    padding: 10px 15px;
+    background-color: #f6c25c;
+    border-radius: 10px;
+}
+
+.navLinkItem:hover .navLink {
+    color: #085372;
+}
+
+.instagram {
+    fill: #f6c25c;
+}
