@@ -20,7 +20,7 @@ export default function Footer() {
           {footerLinks.map((link) => {
             return (
               <>
-                <li>
+                <li key ={link.name}>
                 <Link className={styles.pages} href={link.url}>{link.name}</Link>
                 </li>
               </>
