@@ -19,11 +19,11 @@ export default function Footer() {
         <ul className={styles.list}>
           {footerLinks.map((link) => {
             return (
-              <>
-                <li key ={link.id}>
+              <div key={link.id}>
+                <li >
                 <Link className={styles.pages} href={link.url}>{link.name}</Link>
                 </li>
-              </>
+              </div>
             );
           })}
           <li>

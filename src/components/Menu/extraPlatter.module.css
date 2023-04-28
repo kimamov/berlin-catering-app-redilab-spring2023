@@ -1,0 +1,21 @@
+.cover{
+    margin:20px;
+}
+.extraplatter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    margin:10px;
+}
+.Image{
+    border-radius:0.5rem;
+}
+.dish
+{
+    display:flex;
+    flex-direction: column;
+}
+.price{
+    text-align: center;
+}
