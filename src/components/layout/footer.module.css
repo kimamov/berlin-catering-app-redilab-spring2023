@@ -1,9 +1,9 @@
 .mainfooter {
-    position: absolute;
+    /* position: absolute;
     bottom:0;
-    left:0;
+    left:0; */
     width:100%;
-    padding: 10px;
+    padding: 20px;
     border: 2px solid black;
     background-color: #085372;
   }

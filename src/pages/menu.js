@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import ExtraPlatter from '../components/Menu/extraPlatter';
 
 export default function Menu() {
   return (
@@ -11,6 +11,7 @@ export default function Menu() {
         <h1>
           Menu Page
         </h1>
+        <ExtraPlatter/>
       </main>
     </>
   )
