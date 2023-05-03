@@ -1,0 +1,15 @@
+[
+  {
+    "id": 0,
+    "name": "Humus",
+    "URL": "images/Humus.jpg",
+    "ingredients": [
+      "chickpeas",
+      "sesame paste (tahini)",
+      "garlic",
+      "olive oil in most traditional versions"
+    ],
+    "package": ["Aladin"],
+    "category": "Dips"
+  }
+]
