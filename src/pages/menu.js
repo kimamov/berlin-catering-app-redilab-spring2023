@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import MenuList from '../components/menuList';
 
 
 export default function Menu() {
@@ -9,8 +10,9 @@ export default function Menu() {
       </Head>
       <main >
         <h1>
-          Menu Page
+          OUR MENU
         </h1>
+          <MenuList />
       </main>
     </>
   )
