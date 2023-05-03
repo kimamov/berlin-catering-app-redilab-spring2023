@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import Head from 'next/head'
+import ExtraPlatter from '../components/Menu/extraPlatter';
 import MenuList from '../components/menuList';
 
 
@@ -13,6 +14,7 @@ export default function Menu() {
           OUR MENU
         </h1>
           <MenuList />
+          <ExtraPlatter/>
       </main>
     </>
   )
