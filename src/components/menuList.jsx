@@ -21,7 +21,6 @@ export default function MenuList() {
 
     const uniquePackages = [...new Set(foodItemsList.map(item => item.package).flat(1))]
         .filter(pack => pack !== "Optional");
-        console.log ("uniquePackages: ", uniquePackages);
 
     const uniqueCategories = [...new Set(foodItemsList.map(item => item.category))]
         .filter(category => category !== "Extraplatte" && category !== "Dessert");
@@ -35,7 +34,8 @@ export default function MenuList() {
     return (
         <ul className={styles.menuPackages}>
             {uniquePackages.map(pack => {
-                return (<li key={pack} className={styles.menuPackageCard}>
+                return (
+                <li key={pack} className={styles.menuPackageCard}>
                     <Image src={images[`${pack}`]} alt='Menu Aladin' width='400'/>
                     <div className={styles.menuPackageInfo}>
                         <h2 className={styles.packageHeadline}>{pack.toUpperCase()} <span>{prices[`${pack}`]}€ / 10 PERSONEN</span></h2>
@@ -50,8 +50,11 @@ export default function MenuList() {
                                 </li>)
                             })}
                         </ul>
+                        <div className={styles.orderBtn}>zur Bestellung hinzufügen</div>
                     </div>
-                </li>)
+
+                </li>
+                )
             })}
         </ul>
     )

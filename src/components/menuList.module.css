@@ -8,6 +8,7 @@
 
 .menuPackageCard {
     display: flex;
+    height: 600px;
     background-color: rgba(246,194,92,0.1);
     /*flex-wrap: wrap;*/
     margin: 20px;
@@ -17,6 +18,7 @@
 }
 
 .menuPackageInfo {
+    position: relative;
     width: 100%;
     margin-left: 20px;
     padding: 40px;
@@ -37,8 +39,22 @@
     gap: 20px;
 }
 
-.packageItem {
+.orderBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #085372;
+    color: #f6c25c;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+.orderBtn:hover {
+    background-color: #f6c25c;
+    color: #085372;
 }
 
 .categoryItemsList {
