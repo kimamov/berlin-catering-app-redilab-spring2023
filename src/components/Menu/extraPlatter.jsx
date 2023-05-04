@@ -8,53 +8,55 @@ import sandwichplatte from '../../images/Sandwich-Platte.jpg';
 import styles from './extraPlatter.module.css';
 const extraplatter=[
 {
-    id:1,URL:sandwichplattevegetarisch ,title:"Sandwich Platte Vegetarisch",price:"10 Euro"
+    id:1,URL:sandwichplattevegetarisch ,title:"Sandwich Platte Vegetarisch",price:"10"
 },
 {
-    id:2,URL:sandwichplatte, title:"Sandwich Platte",price:"12 Euro"
+    id:2,URL:sandwichplatte, title:"Sandwich Platte",price:"12"
 },
 {
-    id:3,URL:kaeseobstplatte, title:"Kaese Platte mit Obst und Nussen",price:"12 Euro"
+    id:3,URL:kaeseobstplatte, title:"Kaese Platte mit Obst und Nussen",price:"12"
  
 }
 ]
 const desserts=[
     {
-        id:1,URL:griessundmascarponerolle ,title:"Griess und Mascarponerolle",price:"18 Euro"
+        id:1,URL:griessundmascarponerolle ,title:"Griess und Mascarponerolle",price:"18"
     },
     {
-        id:2,URL:minipancakemitmacarpone ,title:"Mini pancake mit Macarpone",price:"18 Euro"
+        id:2,URL:minipancakemitmacarpone ,title:"Mini pancake mit Macarpone",price:"18"
     },
 {
-    id:3,URL:milchreosmitorangenpudding,title:"Milchreis mit Orangen pudding",price:"15 Euro"
+    id:3,URL:milchreosmitorangenpudding,title:"Milchreis mit Orangen pudding",price:"15"
 }
 ]
 export default function ExtraPlatter()
 {
     return (
     <div className={styles.cover}>
-        <h3>Extra Platten (für 10 Personen mit Preisaufschlag)</h3>
+        <h3 className={styles.title}>Extra Platten (für 10 Personen mit Preisaufschlag)</h3>
         <div className={styles.extraplatter}>
        {
         extraplatter.map((dish)=>{
             return(
                 <div className={styles.dish} key={dish.id}>
                 <Image className={styles.Image} src={dish.URL} alt={dish.title} width={200} height={200}/>
-                <p className={styles.price}>{dish.title} </p>
-                <p className={styles.price}>{dish.price}</p>
+                <span>{dish.title} </span>
+                <span>{dish.price}€</span>
+                <button className={styles.button}>Add to Cart</button>
                 </div>
             )
         })
        }
         </div>
-        <h3>Dessert (für 10 Personen mit Preisaufschlag)</h3>
+        <h3 className={styles.title}>Dessert (für 10 Personen mit Preisaufschlag)</h3>
         <div className={styles.extraplatter}>
         {
            desserts.map((dish)=>{
             return(
                 <div className={styles.dish} key={dish.id}>
                 <Image className={styles.Image} src={dish.URL} alt={dish.title} width={200} height={200}/>
-                <p className={styles.price}>{dish.title}</p><p className={styles.price}>{dish.price}</p>
+                <span>{dish.title}</span><span>{dish.price}€</span>
+                <button className={styles.button}>Add to Cart</button>
                 </div>
             )
         }) 

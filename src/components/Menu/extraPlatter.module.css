@@ -1,12 +1,18 @@
 .cover{
+    margin:40px;
+}
+.title{
+    text-align: center;
     margin:20px;
+    color: #085372;
 }
 .extraplatter{
     display:flex;
     justify-content: center;
     align-items: center;
     gap:2em;
-    margin:10px;
+    margin: 30px;
+    flex-wrap: wrap;
 }
 .Image{
     border-radius:0.5rem;
@@ -15,7 +21,21 @@
 {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
 }
-.price{
-    text-align: center;
+
+.button{
+    background-color: #085372;
+    color: #f7bf48;
+    padding:5px 10px;
+    cursor: pointer;
+    border-radius:10px;
+    font-weight: 700;
+    margin:5px;
+}
+.button:hover {
+    background-color: #f6c25c;
+    color: #085372;
 }
