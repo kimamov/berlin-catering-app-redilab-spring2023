@@ -1,0 +1,17 @@
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* height: 600px; */
+  background-color: rgba(246, 194, 92, 0.1);
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productListGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: square;
+}
