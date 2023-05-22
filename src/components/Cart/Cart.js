@@ -5,10 +5,7 @@ import { useEffect } from "react";
 export default function Cart()
 {
 const{items}=useContext(CartContext);
-// useEffect(()=>{
-
-// },[]
-// )
+console.log("here in cart page"+items[0]);
 
 return(
     <>

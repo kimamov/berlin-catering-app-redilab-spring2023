@@ -13,25 +13,25 @@ import { useEffect } from 'react';
 import Button from './Button';
 const extraplatters=[
 {
-    id:1,URL:sandwichplattevegetarisch ,title:"Sandwich Platte Vegetarisch",price:"10"
+    id:4,URL:sandwichplattevegetarisch ,title:"Sandwich Platte Vegetarisch",price:"10"
 },
 {
-    id:2,URL:sandwichplatte, title:"Sandwich Platte",price:"12"
+    id:5,URL:sandwichplatte, title:"Sandwich Platte",price:"12"
 },
 {
-    id:3,URL:kaeseobstplatte, title:"Kaese Platte mit Obst und Nussen",price:"12"
+    id:6,URL:kaeseobstplatte, title:"Kaese Platte mit Obst und Nussen",price:"12"
  
 }
 ]
 const desserts=[
     {
-        id:4,URL:griessundmascarponerolle ,title:"Griess und Mascarponerolle",price:"18"
+        id:7,URL:griessundmascarponerolle ,title:"Griess und Mascarponerolle",price:"18"
     },
     {
-        id:5,URL:minipancakemitmacarpone ,title:"Mini pancake mit Macarpone",price:"18"
+        id:8,URL:minipancakemitmacarpone ,title:"Mini pancake mit Macarpone",price:"18"
     },
 {
-    id:6,URL:milchreosmitorangenpudding,title:"Milchreis mit Orangen pudding",price:"15"
+    id:9,URL:milchreosmitorangenpudding,title:"Milchreis mit Orangen pudding",price:"15"
 }
 ]
 export default function ExtraPlatter()
@@ -44,7 +44,6 @@ export default function ExtraPlatter()
         <div className={styles.extraplatter}>
        {
         extraplatters.map((dish)=>{
-            let {id,URL,title,price} = dish;
             return(
                 <div className={styles.dish} key={dish.id}>
                 <Image className={styles.Image} src={dish.URL} alt={dish.title} width={200} height={200}/>

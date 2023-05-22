@@ -12,15 +12,15 @@ export default function Header() {
   return (
     <header>
       <nav className={styles.navigation}>
-        <a href="/" className={styles.logoLink}>
+        <Link href="/" className={styles.logoLink}>
           <Image src={logoNafas} alt='Nafas Logo' width='95'/>
-        </a>
+        </Link>
         <ul className={styles.navLinksList}>
           <li className={styles.navLinkItem}>
-            <a href="/events" className={styles.navLink}>VERANSTALTUNGEN</a>
+            <Link href="/events" className={styles.navLink}>VERANSTALTUNGEN</Link>
           </li>
           <li className={styles.navLinkItem}>
-            <a href="/menu" className={styles.navLink}>MENU</a>
+            <Link href="/menu" className={styles.navLink}>MENU</Link>
           </li>
           <li>
             <Link href="/cart"> 

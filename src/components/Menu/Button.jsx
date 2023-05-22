@@ -10,12 +10,10 @@ export default function Button({dish})
     const[Cart,setAddtoCart]=useState(false);
     const handleAddClick=()=>{
         setAddtoCart(true)
-        console.log({dish})
         addToCart(dish)
     }
     const handleRemoveClick=()=>{
 setAddtoCart(false)
-console.log({dish})
 removeFromCart(dish.id)
     }
     return(

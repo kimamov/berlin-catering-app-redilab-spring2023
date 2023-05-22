@@ -1,4 +1,5 @@
 import styles from "./heroSection.module.css";
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -18,9 +19,9 @@ export default function HeroSection() {
           Voluptatem soluta sint error dolorum sequi voluptate quod quis nam
           aspernatur! Tempore?
         </div>
-        <a href="/menu" className={styles.ctaButton}>
+        <Link href="/menu" className={styles.ctaButton}>
           Order now
-        </a>
+        </Link>
       </div>
     </div>
   );
