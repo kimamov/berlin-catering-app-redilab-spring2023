@@ -1,0 +1,48 @@
+.clientContactInfoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30vw;
+  margin: auto;
+  padding: 10px;
+}
+
+.label {
+  color: #085372;
+}
+
+.title {
+  color: #085372;
+  font-weight: 600;
+}
+
+.input {
+  height: 36px;
+  background-color: rgba(246, 194, 92, 0.1);
+  border: 1px solid #f6c25c;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.5s;
+}
+
+.input:focus {
+  border: 1px solid #085372;
+}
+
+.btnSubmit {
+  height: 36px;
+  background-color: #085372;
+  color: #f6c25c;
+  font-weight: 800;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: 1px solid #085372;
+  width: 30%;
+  cursor: pointer;
+}
+
+.btnSubmit:hover {
+  background-color: #f6c25c;
+  color: #085372;
+  border: 1px solid #f6c25c;
+}
