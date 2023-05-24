@@ -8,7 +8,7 @@ export default function Footer() {
     { id:3, name: "Data Protection", url: "/dataprotection" },
     { id:4,name: "About us", url: "/" },
     { id:5,name: "Menu", url: "#" },
-    { id:6, name: "Contact Us", url: "#" }
+    { id:6, name: "Contact Us", url: "/contactus" }
   ];
   const socialLinks={name:"instagram",url:"https://www.instagram.com/nafas.muenchen/"};
   
