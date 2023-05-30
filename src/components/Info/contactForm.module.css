@@ -1,0 +1,63 @@
+.formBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  background-color: #F0F0F0;
+  margin: 2vw 0;
+}
+
+.contactForm {
+  width: 80vw;
+  margin: 30px 30px;
+}
+
+.label {
+  font-weight: bold;
+  color: #085372;
+  margin-bottom: 30px;
+}
+
+.name, .email, .message {
+  display: block;
+  width: 70%;
+  padding: .5rem .8rem .5rem .8rem;
+  margin: 1vw 0 2vw 0;
+  border: .05rem solid papayawhip;
+  border-radius: 5px;
+  font-size: 15px;
+
+}
+
+.message {
+  width: 100%;
+  font-family: var(--font-roboto);
+  padding-bottom: 6rem;
+}
+
+.submit {
+  bottom: 20px;
+  left: 40px;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f6c25c;
+  color: #085372;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: .5vw 0;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #085372;
+  color: #f6c25c;
+}
+
+@media screen and (min-width:800px) {
+  .contactForm {
+    max-width: 50vw;
+  }
+}
