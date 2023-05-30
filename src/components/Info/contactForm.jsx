@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './contactForm.module.css';
 
 export default function contactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -12,37 +13,45 @@ export default function contactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor='name'>Name:</label>
-      <input 
-        type='text' 
-        id='name' 
-        name='name' 
-        value={form.name} 
-        onChange={handleChange} 
-        required
-      />
-      <label htmlFor='email'>e-mail:</label>
-      <input 
-        type='email' 
-        id='email' 
-        name='email' 
-        value={form.email} 
-        onChange={handleChange} 
-        required
-      />
-      <label htmlFor='message'>Message:</label>
-      <input 
-        type='text' 
-        id='message' 
-        name='message' 
-        value={form.message} 
-        onChange={handleChange} 
-        required
-        maxlength='900'
-      />
-      <button>submit</button>
-    </form>
+    <div className={styles.formBox}>
+      <form className={styles.contactForm} onSubmit={handleSubmit}>
+        <label className={styles.label} htmlFor='name'>Name:</label>
+        <input 
+          className={styles.name}
+          type='text' 
+          id='name' 
+          name='name' 
+          value={form.name} 
+          onChange={handleChange} 
+          placeholder='First Name / Last Name'
+          required
+        />
+        <label className={styles.label} htmlFor='email'>e-mail:</label>
+        <input 
+          className={styles.email}
+          type='email' 
+          id='email' 
+          name='email' 
+          value={form.email} 
+          onChange={handleChange} 
+          placeholder='Please enter a valid email address'
+          required
+        />
+        <label className={styles.label} htmlFor='message'>Message:</label>
+        <textarea 
+          className={styles.message}
+          type='text' 
+          id='message' 
+          name='message' 
+          value={form.message} 
+          onChange={handleChange} 
+          placeholder='Type here...'
+          required
+          maxlength='900'
+        />
+        <button className={styles.submit}>submit</button>
+      </form>
+    </div>
   );
 }
 
