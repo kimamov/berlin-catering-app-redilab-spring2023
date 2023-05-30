@@ -2,6 +2,7 @@ import { useState } from "react"
 import { CartContext } from "@/context/CartContext";
 import { useContext } from "react";
 import styles from './Button.module.css';
+import Quantity from "./Quantity";
 export default function Button({dish})
 {
 
@@ -19,7 +20,8 @@ removeFromCart(dish.id)
     return(
         <>
         {
-            Cart ?<button className={styles.button} onClick={handleRemoveClick}>Remove from Cart</button> :<button className={styles.button} onClick={handleAddClick}>Add to Cart</button>
+            Cart ?<Quantity id={dish.id}/>:
+            <button className={styles.button} onClick={handleAddClick}>Add to Cart</button>
         }
         </>
        

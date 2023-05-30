@@ -8,7 +8,7 @@ import { useContext } from 'react';
 import { CartContext } from '@/context/CartContext';
 import Link from 'next/link';
 export default function Header() {
-  const{items}=useContext(CartContext);
+  const{items,count}=useContext(CartContext);
   return (
     <header>
       <nav className={styles.navigation}>
@@ -24,8 +24,8 @@ export default function Header() {
           </li>
           <li>
             <Link href="/cart"> 
-            <Image src={cartIcon} width={50} alt='Cart Icon'/>
-{items.length}
+            <Image className={styles.cartImage} src={cartIcon} width={50} alt='Cart Icon'/>
+            <span className={styles.count}>{count} </span>
             </Link>
             {/*<a href="https://www.instagram.com/nafas.muenchen/" target="_blank">*/}
             {/*  <Image src={instagramIcon} alt='Instagram Icon'/>*/}
