@@ -5,7 +5,6 @@ export const CartContext=createContext({items:[],count:0});
 export const CartProvider=({children})=>{
     const[state,dispatch]=useReducer(Reducer,{items:[],count:0,totalPrice:0,});
     const SumOfItems=(cartitems)=>{
-        console.log(cartitems   );
         let sum=cartitems.reduce((total,product)=>total+product.quantity,0);
         console.log("state.count"+state.count);
         return sum; 
@@ -29,20 +28,19 @@ export const CartProvider=({children})=>{
     const removeFromCart=(id)=>{
         const updatedCart=state.items.filter(
             (currentProduct)=>currentProduct.id!==id
-        );
+        ); 
         dispatch(
             {
                 type:"DEL",
                 payload:{
-                    items:updatedCart
+                    items:updatedCart,
+                    sum:SumOfItems(updatedCart)
                 }
             }
         )
     }
     const increaseItem=(id,value)=>{
         (state.items.find(currentProduct=>currentProduct.id==id)).quantity++;
-        console.log(state);
-
        dispatch(
         {
             type:"INCREASE",
@@ -91,6 +89,7 @@ const Reducer=(state,action)=>{
             return{
                 ...state,
                 items:payload.items,
+                count:payload.sum
             };
             case "INCREASE":
                  console.log("increase"+payload.sum);
