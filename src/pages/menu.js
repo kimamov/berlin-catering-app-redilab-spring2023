@@ -3,7 +3,8 @@ import ExtraPlatter from "../components/Menu/extraPlatter";
 import MenuList from "../components/menuList";
 import styles from "./menu.module.css";
 import productListMapping from "@/utils/jsonMapping";
-import Cart from "../components/Cart/Cart";
+import { CartContext } from '@/context/CartContext'
+
 export default function Menu() {
   return (
     <>
@@ -15,9 +16,8 @@ export default function Menu() {
         {/*  UNSER MENÜ*/}
         {/*</h1>*/}
 
-        <MenuList />
+<MenuList />
 <ExtraPlatter />
-  
       </main>
     </>
   );

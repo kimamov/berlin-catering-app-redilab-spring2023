@@ -10,13 +10,13 @@
   export default function MenuList() {
     const mainPackages = [
       {
-        id:1,URL:packOne,title:"Aladin",price:180
+        id:1,URL:packOne,title:"Aladin",price:180,quantity:1
       },
       {
-        id:2,URL:packTwo,title:"1001 Nacht",price:350
+        id:2,URL:packTwo,title:"1001 Nacht",price:350,quantity:1
       },
       {
-        id:3,URL:packThree,title:"Sahara",price:280
+        id:3,URL:packThree,title:"Sahara",price:280,quantity:1
       }
     ];
    

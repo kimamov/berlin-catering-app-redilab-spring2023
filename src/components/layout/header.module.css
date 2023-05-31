@@ -44,3 +44,11 @@
 .instagram {
     fill: #f6c25c;
 }
+.cartImage{
+    position:relative;
+}
+.count{
+position:absolute;
+color:#f6c25c;
+font-weight: 500;
+}
