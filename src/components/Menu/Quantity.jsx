@@ -1,11 +1,10 @@
 import { useState } from "react"
-import Button from "./Button";
 import { CartContext } from "@/context/CartContext";
 import { useContext } from "react";
 import styles from './Quantity.module.css';
 export default function Quantity({id,setAddtoCart})
 {
-    const{items,increaseItem,decreaseItem,removeFromCart}=useContext(CartContext);
+    const{increaseItem,decreaseItem}=useContext(CartContext);
     const[value,setValue]=useState(1);
     const handleDecrement=()=>{
         setValue(prevvalue=>prevvalue-1)  

@@ -1,6 +1,5 @@
-import Cartcomponent from '../components/Cart/Cart';
 import { createContext, useReducer } from 'react';
-export const CartContext=createContext({items:[],count:0});
+export const CartContext=createContext({items:[],count:0,totalPrice:0});
 //CartContext takes an array of items as the default value.
 export const CartProvider=({children})=>{
     const[state,dispatch]=useReducer(Reducer,{items:[],count:0,totalPrice:0,});
