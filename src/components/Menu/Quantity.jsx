@@ -4,7 +4,7 @@ import { useContext } from "react";
 import styles from './Quantity.module.css';
 export default function Quantity({id,setAddtoCart})
 {
-    const{increaseItem,decreaseItem}=useContext(CartContext);
+    const{increaseItem,decreaseItem,removeFromCart}=useContext(CartContext);
     const[value,setValue]=useState(1);
     const handleDecrement=()=>{
         setValue(prevvalue=>prevvalue-1)  
@@ -25,7 +25,9 @@ export default function Quantity({id,setAddtoCart})
     };
     return(
         <div className={styles.button}>
-                <button onClick={handleDecrement}>-</button><span className={styles.cartvalue}>{value}</span><button onClick={handleIncrement}>+</button>   
+            <button onClick={handleDecrement}>-</button>
+            <span className={styles.cartvalue}>{value}</span>
+            <button onClick={handleIncrement}>+</button>   
         </div>
     )
 }
