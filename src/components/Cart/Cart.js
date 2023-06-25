@@ -7,15 +7,15 @@ export default function Cart() {
   const { items, count } = useContext(CartContext);
 
   return (
-    <>
+    <div className={styles.listContainer}>
       {console.log(items)}{" "}
-      <ul className={styles.listContainer}>
+      <ul className={styles.cartList}>
         {items.map(cartItems => (
         <CartItem
           key={cartItems.id}
           cartItems={cartItems} />))}
       </ul>
-      <p>You have chosen {count} items 😋</p>
-    </>
+      <p className={styles.total}>You have chosen {count} items 😋</p>
+    </div>
   );
 }
