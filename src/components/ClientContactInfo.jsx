@@ -1,9 +1,11 @@
 import { useState } from "react";
 import styles from "./ClientContactInfo.module.css";
+import ThankYouMsg from "./ThankYouMsg"
 
 export default function ClientContactInfo() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
+  const [submited, setSubmited] = useState(false);
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -17,10 +19,15 @@ export default function ClientContactInfo() {
     console.log(e.target[0].value);
     console.log(e.target[1].value);
     e.preventDefault();
+    setSubmited(true);
+
   };
 
   return (
-    <div>
+    <>
+    {submited ? 
+  <ThankYouMsg/>  :
+      <div>
       <p className={styles.title}>Client Contact Info</p>
       <form onSubmit={handleSubmit} className={styles.clientContactInfoForm}>
         <label className={styles.label}>Name</label>
@@ -41,6 +48,8 @@ export default function ClientContactInfo() {
 
         <input className={styles.btnSubmit} type="submit" value="Submit" />
       </form>
-    </div>
+    </div> 
+  }
+  </>
   );
 }
