@@ -3,6 +3,7 @@
     bottom:0;
     left:0; */
     width:100%;
+    height: 100%;
     padding: 20px;
     border: 2px solid black;
     background-color: #085372;
@@ -26,6 +27,9 @@
     }
     .pages li{
         margin-bottom:10px;
+    }
+    .mainfooter{
+      width: 100%;
     }
     
   }
