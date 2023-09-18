@@ -1,8 +1,8 @@
 .cartItem {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
-  padding: 1rem 1rem 1rem 1rem;
+ 
+ 
   background-color: white;
   border-radius: 10px;
   border: 0.05rem solid #f6c25c;
@@ -78,4 +78,19 @@
 
 .deleteBtn:hover {
   filter: sepia(60%);
+}
+
+@media screen and (max-width:480px) {
+
+  .cartItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   
+  }
+  .itemContainer{
+    width: 100%;
+    display: flex;
+
+  }
+  
 }

@@ -46,7 +46,7 @@ export default function ClientContactInfo() {
           onChange={handleEmail}
         />
 
-        <input className={styles.btnSubmit} type="submit" value="Submit" />
+        <button  className={styles.btnSubmit} type="submit" value="Submit" >submit</button>
       </form>
     </div> 
   }
