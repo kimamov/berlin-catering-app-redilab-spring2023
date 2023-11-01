@@ -4,7 +4,9 @@ export default function ThankYouMsg() {
 
 return (
     <div className={styles.thankyoucontainer}>
-        <p className={styles.thankyoumessage}>Thank You For Choosing Us</p>
+        <p className={styles.thankyoumessage}>
+            Vielen Dank, dass Sie sich für uns entschieden haben
+        </p>
     </div>
 )
 }
