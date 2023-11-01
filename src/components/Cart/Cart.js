@@ -15,7 +15,7 @@ export default function Cart() {
           key={cartItems.id}
           cartItems={cartItems} />))}
       </ul>
-      <p className={styles.total}>You have chosen {count} items 😋</p>
+      <p className={styles.total}>Sie haben {count} Artikel ausgewählt 😋</p>
     </div>
   );
 }

@@ -21,11 +21,14 @@ export default function Header() {
               <Image className={styles.instagram} src={instagramIcon} alt='Instagram Icon'/>
             </a>
           </li>
-          <li className={styles.navLinkItem}>
+          {/* <li className={styles.navLinkItem}>
             <Link href="/events" className={styles.navLink}>VERANSTALTUNGEN</Link>
+          </li> */}
+          <li className={styles.navLinkItem}>
+            <Link href="/contactus" className={styles.navLink}>KONTAKT</Link>
           </li>
           <li className={styles.navLinkItem}>
-            <Link href="/menu" className={styles.navLink}>MENU</Link>
+            <Link href="/menu" className={styles.navLink}>SPEISEKARTE</Link>
           </li>
           <li>
             <Link href="/cart"> 
