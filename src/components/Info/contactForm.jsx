@@ -23,10 +23,10 @@ export default function contactForm() {
           name='name' 
           value={form.name} 
           onChange={handleChange} 
-          placeholder='First Name / Last Name'
+          placeholder='Vorname / Nachname'
           required
         />
-        <label className={styles.label} htmlFor='email'>e-mail:</label>
+        <label className={styles.label} htmlFor='email'>E-Mail:</label>
         <input 
           className={styles.email}
           type='email' 
@@ -34,10 +34,10 @@ export default function contactForm() {
           name='email' 
           value={form.email} 
           onChange={handleChange} 
-          placeholder='Please enter a valid email address'
+          placeholder='Bitte geben Sie eine gültige E-Mail Adresse ein'
           required
         />
-        <label className={styles.label} htmlFor='message'>Message:</label>
+        <label className={styles.label} htmlFor='message'>Nachricht:</label>
         <textarea 
           className={styles.message}
           type='text' 
@@ -45,11 +45,11 @@ export default function contactForm() {
           name='message' 
           value={form.message} 
           onChange={handleChange} 
-          placeholder='Type here...'
+          placeholder='Hier eingeben......'
           required
           maxlength='900'
         />
-        <button className={styles.submit}>submit</button>
+        <button className={styles.submit}>Senden</button>
       </form>
     </div>
   );
