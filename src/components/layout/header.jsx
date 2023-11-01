@@ -16,6 +16,11 @@ export default function Header() {
           <Image src={logoNafas} alt='Nafas Logo' width='95'/>
         </Link>
         <ul className={styles.navLinksList}>
+          <li className={styles.igContainer}>
+            <a href="https://www.instagram.com/nafas.muenchen/" target="_blank">
+              <Image className={styles.instagram} src={instagramIcon} alt='Instagram Icon'/>
+            </a>
+          </li>
           <li className={styles.navLinkItem}>
             <Link href="/events" className={styles.navLink}>VERANSTALTUNGEN</Link>
           </li>
@@ -27,9 +32,6 @@ export default function Header() {
             <Image className={styles.cartImage} src={cartIcon} width={50} alt='Cart Icon'/>
             <span className={styles.count}>{count} </span>
             </Link>
-            {/*<a href="https://www.instagram.com/nafas.muenchen/" target="_blank">*/}
-            {/*  <Image src={instagramIcon} alt='Instagram Icon'/>*/}
-            {/*</a>*/}
           </li>
         </ul>
       </nav>

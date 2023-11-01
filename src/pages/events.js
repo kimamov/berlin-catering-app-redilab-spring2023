@@ -9,9 +9,9 @@ export default function Events() {
         <title>Events Page</title>
       </Head>
       <main>
-        <h1>
+        {/* <h1>
           Events Page
-        </h1>
+        </h1> */}
         <EventGallery />
       </main>
     </>

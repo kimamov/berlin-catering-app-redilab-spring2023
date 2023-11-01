@@ -40,21 +40,24 @@
           let dish=mainPackages.find(value=>value.title==pack);
           return (
             <li key={pack} className={styles.menuPackageCard}>
-              <Image src={dish.URL} alt="Menu Aladin" width="400" />
+              <Image src={dish.URL} alt="Menu Aladin" width="200" />
               <div className={styles.menuPackageInfo}>
                 <h2 className={styles.packageHeadline}>
                   <Link href={"/menu/" + pack}>{pack.toUpperCase()}</Link>{" "}
-                  <span>{dish.price}€/ 10 PERSONEN</span>
+                  <span>{dish.price}€ / 10 PERSONEN</span>
+                  <div className={styles.btnContainer}>
+                    <Button dish={dish} className={styles.orderBtn}>zur Bestellung hinzufügen</Button>
+                  </div>
                 </h2>
                 <ul className={styles.packageItemsList}>
                   {uniqueCategories.map((category) => {
                     return (
                       <li key={category} className={styles.packageItem}>
-                        <h3>{category.toUpperCase()}</h3>
+                        <h3 className={styles.categoryTitle}>{category.toUpperCase()}</h3>
                         <ul className={styles.categoryItemsList}>
                           {packageItemsGroupedByCategory(pack, category).map(
                             (item) => (
-                              <li key={item.id}>{item.name}</li>
+                              <li className={styles.listContent} key={item.id}>{item.name}</li>
                             )
                           )}
                         </ul>
@@ -62,7 +65,6 @@
                     );
                   })}
                 </ul>
-                <Button dish={dish} className={styles.orderBtn}>zur Bestellung hinzufügen</Button>
               </div>
             </li>
           );

@@ -41,9 +41,17 @@
     color: #085372;
 }
 
-.instagram {
-    fill: #f6c25c;
+.igContainer {
+    padding: 10px 15px;
+    font-weight: 700;
+    margin-right: 15px;
+    cursor: pointer;
 }
+
+.instagram:hover {
+    fill: #085372;
+}
+
 .cartImage{
     position:relative;
 }
