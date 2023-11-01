@@ -22,7 +22,7 @@ removeFromCart(dish.id)
         {
             Cart ?
             <Quantity id={dish.id} setAddtoCart={setAddtoCart} />:
-        <button className={styles.button} onClick={handleAddClick}>Add to Cart</button>
+        <button className={styles.button} onClick={handleAddClick}>Einkaufswagen</button>
         }
        
 

@@ -28,7 +28,7 @@ export default function ClientContactInfo() {
     {submited ? 
   <ThankYouMsg/>  :
       <div>
-      <p className={styles.title}>Client Contact Info</p>
+      <p className={styles.title}>Kundenkontakt-Informationen</p>
       <form onSubmit={handleSubmit} className={styles.clientContactInfoForm}>
         <label className={styles.label}>Name</label>
         <input
@@ -38,7 +38,7 @@ export default function ClientContactInfo() {
           onChange={handleName}
         />
 
-        <label className={styles.label}>Email Address</label>
+        <label className={styles.label}>E-Mail</label>
         <input
           className={styles.input}
           type="email"
@@ -46,7 +46,7 @@ export default function ClientContactInfo() {
           onChange={handleEmail}
         />
 
-        <button  className={styles.btnSubmit} type="submit" value="Submit" >submit</button>
+        <button  className={styles.btnSubmit} type="submit" value="Submit" >Senden</button>
       </form>
     </div> 
   }

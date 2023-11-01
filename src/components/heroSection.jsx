@@ -1,3 +1,4 @@
+import { startTransition } from 'react';
 import styles from "./heroSection.module.css";
 import Link from 'next/link';
 
@@ -13,14 +14,11 @@ export default function HeroSection() {
           backgroundSize: "cover",
         }}
       >
-        <div className="text-wrapper">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
-          possimus tenetur fugit tempore in provident hic debitis mollitia!
-          Voluptatem soluta sint error dolorum sequi voluptate quod quis nam
-          aspernatur! Tempore?
+        <div className={styles.heroText}>
+          Orientalisches Catering angepasst an deine Wünsche
         </div>
         <Link href="/menu" className={styles.ctaButton}>
-          Order now
+          Jetzt bestellen
         </Link>
       </div>
     </div>
