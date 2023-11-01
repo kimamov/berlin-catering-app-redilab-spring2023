@@ -43,6 +43,10 @@
   margin-right: 1rem;
 }
 
+.itemContainer {
+  margin-bottom: 1rem;
+}
+
 .quantity {
   margin: 10px 10px;
   color: #f6c25c;
@@ -67,6 +71,7 @@
 
 .deleteBtn {
   filter: opacity(50%);
+  margin: 0.5rem 0.5rem 0 0;
 }
 
 .decreaseBtn:hover, .increaseBtn:hover {
